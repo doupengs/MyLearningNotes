@@ -51,11 +51,8 @@ Author: doupeng              |_|            |___/
 ### 解压
 
 * 解压到自己想要放在的**目录**下，推荐放在D盘目录下 `D:\phpwamp_Pack`
-* **lxml >= 3.6** `pip install lxml` **安装**
- * 如果`lxml`安装失败，`windows`系统点击[这里](http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml)下载合适的版本
-* **MySQL-python >= 1.2.3** `pip install MySQL-python` **安装**
- * 如果`MySQL-python`安装失败，`windows`系统点击[这里](http://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python)下载合适的版本
-* **redis>= 2.10** `pip install redis` **安装即可**
+* 双击`PHPWAMP_Pack.exe`，在底部托盘中找到图标后右键选择启动服务。如果遇到360等软件的阻碍，请选择允许访问，启动成功后，再次右键，选择打开网站，即可使用了，如果你的电脑默认的浏览器是IE，建议复制链接，或直接打开谷歌浏览器，或360浏览器，输入`localhost:8066` 或 `127.0.0.1:8066`来使用。
+* 如何使用手机访问此服务，双击目录下的`get_ip.bat`，你会看到下图所示，例如我的局域网的IP就是`172.18.2.164`，因此在手机浏览器中打开`http://172.18.2.164:8066`即可，期间电脑要处于开机状态。
 
 ### 运行
 
