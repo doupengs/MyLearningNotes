@@ -50,7 +50,10 @@ Author: doupeng              |_|            |___/
 
 ### 解压
 
-解压到自己想要放在的**目录**下，推荐放在D盘目录下 `D:\phpwamp_Pack`
+* 解压到自己想要放在的**目录**下，推荐放在D盘目录下 `D:\phpwamp_Pack`<br>
+![](https://github.com/doupengs/MyLearningNotes/blob/master/img/jieya.png)<br>
+* 解压后<br>
+![](https://github.com/doupengs/MyLearningNotes/blob/master/img/jieyahou.png)<br>
 
 ### 开启服务
 
@@ -69,25 +72,11 @@ Author: doupeng              |_|            |___/
 * 手机只可以通过一种方式访问:
   * `172.18.2.164:8066`
 
-### 运行
 
-* **`redis`数据库 `windows`版**
- * [redis-64bit.zip](http://pan.baidu.com/s/1pLrVxN1)
- * [redis-32bit.zip](http://pan.baidu.com/s/1pL6O5Vt)
-* **`mysql`数据库 `windows`版 点击[这里](http://dev.mysql.com/downloads/installer)进入官网下载**
 
-#### 安装方法
 
-```markdown
-1.python setup.py install
-2.pip install dpspider-x.x.x.tar.gz ( win | linux | macOS )
-3.dpspider-x.x.x.win-amd64.exe ( windows可执行文件，双击安装) 
-```
 
-* `xxx.tar.gz` 最新版本
- * [dpspider-2.1.12.tar.gz](http://pan.baidu.com/s/1jI3CHCy)
-* `xxx.exe` 最新版本
- * [dpspider-2.1.12.win-amd64.exe](http://pan.baidu.com/s/1qYyaMhm)
+
  
 # 运行效果图展示
 
@@ -110,55 +99,7 @@ Author: doupeng              |_|            |___/
 ```markdown
 框架的主体，配置文件要继承的类
 ```
-#### 初始化的成员
 
-* **self.listGetUrls** : 最初的要爬取的列表页的所有GET链接
-* **self.listPostUrl** : 最初需要爬取的列表页的POST链接
-* **self.postPages** : 最初需要爬取的列表页的POST链接的所有页数
-* **self.postPageName** : 最初需要爬取的列表页的POST链接的页数KEY的名字
-* **self.encoding** : 网页的编码，两级可分别设置，默认均为UTF-8
-* **self.threadNum** : 开启的线程数量，默认开启20个线程
-* **self.logFile** : 如果有，将输出写入文件，没有就打印到控制台
-* **self.color** : 打印是否带有颜色
-* **self.debug** : 有四个等级，0 什么都不输出，1 只输出[Error],2 输出[Error]和[WARING],3 输出[Error]，[WARING]和[INFO],4 全输出
-* **self.downloader** 下载器的参数设置:
- * **self.useProxyMaxNum** : 每个代理的连续使用的最大次数，当连续使用次数达到这个数字时，强制更换代理，防止代理被封，默认为10次
- * **self.proxyFilePath** :  代理文件的路径，默认为当前路径下的 proxyList.txt 文件
- * **self.method** : 请求方法，默认为 (GET,GET) 方法, 还有（POST,GET）
- * **self.proxyEnable** : 是否使用代理，默认为 False
- * **下面这些是请求时可能用到可选参数，相对常会用到的: data, headers, cookies, timeout**
- * **self.params** = None
- * **self.data** = None
- * **self.json** = None
- * **self.headers** = None
- * **self.cookies** = None
- * **self.files** = None
- * **self.auth** = None
- * **self.timeout** = None
- * **self.allowRedirects** = True
- * **self.verify** = None
- * **self.stream** = None
- * **self.cert** = None
-* **self.IM** mysql数据库的参数设置 :
- * **self.mysqlHost** : 数据库的主机名，默认为本机 localhost
- * **self.mysqlUser** : 数据库的用户名
- * **self.mysqlPassword** : 数据库的密码
- * **self.mysqlDb** : 数据库的库名
- * **self.mysqlTableName** : 数据库库下的表名
- * **self.mysqlCharset** : 默认编码为 UTF-8
- * **self.isMysqlFLF** : 插入失败的sql语句日志，默认不生成insertMysqlFail.log文件
- * **self.isMysqlRLF** : 违反mysql主键唯一约束条件,没有插入数据库的sql语句，相当于去重，默认不生成insertMysqlRepeat.log文件
- * **self.isInsertMysql** : 是否连接数据库，测试抓取正常时启用，默认不连接数据库
-* **self.RD** redis数据库的参数设置:
- * **self.isUseRedis** : 是否使用redis数据库进行去重, 默认为 False
- * **self.redisKey** : 如果使用redis去重，作为redis的一个key存储，value值为mysql的表名
- * **self.isRedisKeyUrl** : 如果redisKey是详情页的url，url作为去重依据，默认值为True，则这个详情页会在第一层过滤，不会再下载，节约资源
- * **self.redisHost** : 数据库的主机名，默认为本机 localhost
- * **self.redisPort** : 数据库的端口号，默认为6379
- * **self.redisDb** : redis数据库，默认为0
- * **self.redisPassword** : 数据库的密码，默认为 None
-
-#### 需要重载的方法
 
 * **parseList(**self,data,response**)**
 ```markdown
