@@ -8,6 +8,7 @@
 * [使用](#使用)
   * [搜索](#搜索)
   * [下载](#下载)
+* [写在后面](#写在后面)
 
 # 简介
 
@@ -72,3 +73,6 @@ Author: doupeng              |_|            |___/
 ![](https://github.com/doupengs/MyLearningNotes/blob/master/img/xiazai.png)<br>
 
 
+# 写在最后
+
+一次安装之后，电脑下次开机此服务会自动启动，即直接打开浏览器就可以使用，所以你可以将`localhost:8066`在浏览器中收藏，直接打开就可以使用
